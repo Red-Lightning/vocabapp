@@ -15,7 +15,6 @@ class WordsController < ApplicationController
 	end
 
 	def create
-		params[:word][0].upcase!
 		@word = Word.new(word_params)
 
 		if @word.save
