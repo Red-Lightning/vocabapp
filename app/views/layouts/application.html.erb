@@ -14,10 +14,15 @@
 	
 	<div class="container">
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 			<%= link_to 'VocabApp', words_path, class: "navbar-brand" %>
 		</div>
 
-		<div>
+		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
 				<li><%= link_to 'Home', words_path %></li>
 				<li><%= link_to 'New Word', new_word_path %></li>
@@ -29,7 +34,7 @@
 
 	</div>
 
-</nav>
+</nav> <!-- end of navbar -->
 
 <div class="container">
 	
@@ -41,9 +46,9 @@
 
 <div class="nav navbar-default navbar-fixed-bottom">
 	<div class="container">
-		<p class="navbar-text">This website is created by Silver Slash.</p>
+		<p class="navbar-text">This website is designed and developed by Sanjeet Dasharath.</p>
 	</div>
-</div>
+</div> <!-- end of footer -->
 
 </body>
 </html>
