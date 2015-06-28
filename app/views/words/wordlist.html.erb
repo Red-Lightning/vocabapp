@@ -1,0 +1,9 @@
+<% @words.each do |word| %>
+<kbd><%= word.word %></kbd>
+<div class="well well-sm">
+	<p class="text-muted">Definition: </p>
+	<%= word.definition %> <br> <br>
+	<%= link_to 'edit', edit_word_path(word), class: "small" %> | <%= link_to 'delete', word_path(word), method: :delete, data: { confirm: 'Are you sure?' }, class: "small" %>
+</div>
+<hr>
+<% end %>
