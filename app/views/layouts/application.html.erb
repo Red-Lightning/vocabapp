@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <title>Vocabapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+	
+	<div class="container">
+		<div class="navbar-header">
+			<%= link_to 'VocabApp', words_path, class: "navbar-brand" %>
+		</div>
+
+		<div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><%= link_to 'Home', words_path %></li>
+				<li><%= link_to 'New Word', new_word_path %></li>
+				<li><a href="#">Word List</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+
+
+	</div>
+
+</nav>
+
+<div class="container">
+	
+	<div class="jumbotron">
+		<%= yield %>
+	</div>
+
+</div>
+
+<div class="nav navbar-default navbar-fixed-bottom">
+	<div class="container">
+		<p class="navbar-text">This website is created by Silver Slash.</p>
+	</div>
+</div>
+
+</body>
+</html>

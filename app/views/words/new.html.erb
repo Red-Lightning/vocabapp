@@ -1,0 +1,16 @@
+<h2>Enter a <mark>word</mark> and a <mark>definition</mark>:</h2>
+<br><br>
+<%= form_for :word, url: words_path do |f| %>
+	<p>
+		<%= f.label :word %> <br>
+		<%= f.text_field :word %>
+	</p> <br>
+
+	<p>
+		<%= f.label :definition %> <br>
+		<%= f.text_area :definition %> 
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

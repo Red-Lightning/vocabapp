@@ -1,0 +1,24 @@
+<p>
+	<kbd><%= @word.word %></kbd>
+</p> 
+<div class="well">
+	<p>
+	<%= @word.definition %>
+	</p>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="text-center">
+      <div class="btn-group btn-group-lg">
+    		<%= link_to words_path, class: "btn btn-primary" do %>
+					<span class="glyphicon glyphicon-chevron-left"></span>
+    		<% end %>
+    		<%= link_to words_path, class: "btn btn-primary" do %>
+					<span class="glyphicon glyphicon-chevron-right"></span>
+    		<% end %>
+			</div>
+    </div>
+  </div>
+ </div>
+
