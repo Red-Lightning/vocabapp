@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150628113736) do
+ActiveRecord::Schema.define(version: 20150630093333) do
+
+  create_table "forms", force: :cascade do |t|
+    t.string   "form"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "words", force: :cascade do |t|
     t.string   "word"
     t.text     "definition"
+    t.string   "form"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

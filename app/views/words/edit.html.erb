@@ -10,6 +10,11 @@
 		<%= f.label :definition %> <br>
 		<%= f.text_area :definition %> 
 	</p>
+
+	<p>
+		<%= select(:word, :form, [['Noun', 'Noun'], ['Adjective', 'Adjective'], ['Verb', 'Verb']]) %>
+	</p>
+
 	<p>
 		<%= f.submit %>
 	</p>
