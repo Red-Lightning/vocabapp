@@ -5,4 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-word = Word.create(word: "test", definition: "this is a test")
+Word.create(word: "test", definition: "heroku test", form: "Noun")
